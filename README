@@ -1,9 +1,13 @@
+Muslu YÜKSEKTEPE – 2016
+www.muslu.org | www.djangoturkiye.com
+Bağış Hesabı: TR03 0006 2000 7500 0006 6675 10
+
 Merhaba arkadaşlar;
 
+14 Ocak 2016
 Django 1.9 için 2. gün eğitimlerinde aşağıdaki konulara değindim.
 
 Django_1.9__140116.pdf (1.57MB)
-
 
 uygulama adı değiştirme
 proje öncesi fizibilite
@@ -22,4 +26,17 @@ foreignkey default seçeneği
 tabular ve stacked inline denemesi
 servis kaydı oluşturma ve çıktısını alma
 
-***Gönüllü bir arkadaş editörlük yapıp metinleri ve renkleri düzenlerse çok sevinirim.
+
+13 Ocak 2016
+admin temasını kopyalama
+static dosyalarını düzenleme
+html dosyalarını düzenleme
+stil ekleme
+yetkilendirme
+list_display kısıtlama
+kayıt limiti koyma
+kayıt silme iptali
+
+
+*** Bağış için alt bilgiye iban numarası ekledim. Yapılacak bağışlar oğlum Cem Emir'in oyuncakları için kullanılacaktır.
+*** Gönüllü bir arkadaş editörlük yapıp metinleri ve renkleri düzenlerse çok sevinirim.
