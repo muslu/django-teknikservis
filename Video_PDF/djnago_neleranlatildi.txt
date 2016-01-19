@@ -1,0 +1,38 @@
+createsuperuser ile yetkili kullanıcı oluşturma 20
+
+
+uygulama adı değiştirme
+proje öncesi fizibilite
+charfield için default rastgele kod oluşturma
+boş geçilemez kısıtı
+null olamaz kısıtı
+list_display_links ile sadece istenilen alanlara düzenleme linki
+action (eylem) ekleme
+toplu kayıt güncelleme
+müşteri telefonunu arama
+toplu kayıt güncellemede koşul kullanma
+manytomany ile çoklu seçim
+inline ile tablo bağı oluşturma
+foreignkey veri kısıtlama
+foreignkey default seçeneği
+tabular ve stacked inline denemesi
+servis kaydı oluşturma ve çıktısını alma
+
+
+TemplateView ile direk html,txt veya xml dosyasına yönlendirme
+media klasör kullanımı
+url.py ye fiziksel yol tanımlama (media)
+csrf kısa değinme
+ajax ile sorgulama
+HttpResponse anlatımı
+veritabanına alan ekleme
+
+
+
+
+
+xml dosyasına yönlendirme (render)
+cdata nedir ve kullanımı
+inline bilgileri (_set.all) template olarak kullanma
+forloop.counter nedir
+
