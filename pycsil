@@ -1,2 +1,2 @@
-find ~/django/ -name '*.pyc' -exec rm {} \;
+find ~/teknikservisformu/ -name '*.pyc' -exec rm {} \;
 
