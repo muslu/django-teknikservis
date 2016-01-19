@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ServisFormlari>
+
     {% for k in tumformlar %}
         <Form>
+
             <Sira>{{ forloop.counter }}</Sira>
             <FormNo>{{ k.FormNo }}</FormNo>
             <Musteri><![CDATA[{{ k.Musteri }}]]></Musteri>
             <TeslimEden><![CDATA[{{ k.TeslimEden }}]]></TeslimEden>
+
             {% for l in k.urunler_set.all %}
+
                 <Cins><![CDATA[{{ l.Cins|upper }}]]></Cins>
                 <Marka><![CDATA[{{ l.Marka|upper }}]]></Marka>
                 <Model><![CDATA[{{ l.Model|upper }}]]></Model>
@@ -14,12 +18,14 @@
                 <Sikayet><![CDATA[{{ l.Sikayet }}]]></Sikayet>
                 <Durum><![CDATA[{{ l.Durum }}]]></Durum>
 
-                {% for kk in l.Aksesuar.all %}
-                    <Aksesuar><![CDATA[{{ kk|title }}]]></Aksesuar>
-                {% endfor %}
+                    {% for kk in l.Aksesuar.all %}
+                        <Aksesuar><![CDATA[{{ kk|title }}]]></Aksesuar>
+                    {% endfor %}
 
             {% endfor %}
+
         </Form>
     {% endfor %}
+
 </ServisFormlari>
 
