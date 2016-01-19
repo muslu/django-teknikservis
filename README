@@ -37,6 +37,24 @@ list_display kısıtlama
 kayıt limiti koyma
 kayıt silme iptali
 
+14 Ocak 2016
+TemplateView ile direk html,txt veya xml dosyasına yönlendirme
+media klasör kullanımı
+url.py ye fiziksel yol tanımlama (media)
+csrf kısa değinme
+ajax ile sorgulama
+HttpResponse anlatımı
+veritabanına alan ekleme
+
+
+
+
+17 Ocak 2016
+xml dosyasına yönlendirme (render)
+cdata nedir ve kullanımı
+inline bilgileri (_set.all) template olarak kullanma
+forloop.counter nedir
+
 
 *** Bağış için alt bilgiye iban numarası ekledim. Yapılacak bağışlar oğlum Cem Emir'in oyuncakları için kullanılacaktır.
 *** Gönüllü bir arkadaş editörlük yapıp metinleri ve renkleri düzenlerse çok sevinirim.
