@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta charset="utf-8">
+    <title>İzmir Teknik Servis, Servis Formu kontrol, durum öğrenme | izmirteknikservis.tk</title>
+    <meta name="description" content="İzmir Teknik Servis, Servis Formu kontrol, durum öğrenme"/>
+    <link rel="canonical" href="http://www.izmirteknikservis.tk"/>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+
+    <link rel="shortcut icon" href="/media/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <style>
+            .borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+                border: none;
+            }
+    </style>
+
+
+</head>
+
+
+<body onload="window.print()">
+
+
+<div class="container">
+
+    <h1>{{ formdurumu.FormNo }}</h1>
+
+    <p>{{ formdurumu.Musteri.Unvan|title }} ({{ formdurumu.Musteri.Yetkili|title }}) - {{ formdurumu.KayitTarihi }}</p>
+
+    <table class="table table-condensed">
+        <thead>
+        <tr>
+            <th>Ürün</th>
+            <th>Seri No</th>
+            <th>Şikayet</th>
+            <th>Aksesuar</th>
+            <th>Not</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for k in formbilgileri %}
+            <tr>
+                <td>{{ k.Cins|upper }} | {{ k.Marka|upper }} | {{ k.Model|upper }}</td>
+                <td>{{ k.SeriNo|upper }}</td>
+                <td>{{ k.Sikayet|title }}</td>
+                <td>{% for kk in k.Aksesuar.all %}{{ kk|title }} {% endfor %}</td>
+                <td>{{ k.Not }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+
+    </table>
+
+</div>
+
+<div class="container">
+    <table class="table table-condensed borderless">
+        <tr>
+            <th>Servise Teslim Eden</th>
+            <th>Teknisyen</th>
+            <th>Ürünü Teslim Alan</th>
+        </tr>
+        <tr>
+            <th>{{ formdurumu.TeslimEden|title }}</th>
+            <th>{{ formdurumu.TeslimAlan|title }}</th>
+            <th></th>
+        </tr>
+    </table>
+</div>
+
+
+
+<div class="container">
+    <table border="0" cellspacing="" width="100%">
+
+        <tr><td><i style="font-size:12px;">Bakım ve onarım süresi 3 (üç) aydır.</i></td></tr>
+        <tr><td><i style="font-size:12px;">Servisimizde asla kaçak yazılım kullanılmamakta ve destek verilmemektedir.</i></td></tr>
+        <tr><td><i style="font-size:12px;">Tamire gelen cihazların harddisk, yazılım ve yedeklerinden tarafımız sorumlu değildir.</i></td></tr>
+        <tr><td><i style="font-size:12px;">Servise gelen ürünlerde önceden bildirilmeyen sorunlardan tarafımız sorumlu değildir.</i></td></tr>
+        <tr><td><i style="font-size:12px;">Servise teslim edilen ürünlerin emanet süresi 30 (otuz) gün olup, sonrasında firmamızın sorumluluğu yoktur.</i></td></tr>
+        <tr><td><i style="font-size:12px;">Servise gelen cihazların chip değişim ve kalıplanmasında oluşabilecek sorunlarda tarafımız sorumlu değildir.</i></td></tr>
+
+
+    </table>
+</div>
+
+
+</body>
+</html>
