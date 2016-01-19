@@ -7,11 +7,11 @@
 
             <p>Etiketler</p>
 
-            {% comment "Başlık" %}
-
-            Burası html kaynak kodunda gözükmez. İlerisi için not olarak kullanılacak.
-
-            {% endcomment %}
+            {% for o in "123456" %}
+                <tr class="{% cycle 'row1' 'row2' %}">
+                    {{ o }}
+                </tr>
+            {% endfor %}
 
 
         </div>
