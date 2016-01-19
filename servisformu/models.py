@@ -5,6 +5,11 @@ from django.utils import timezone
 
 from django.db import models
 
+
+
+
+
+
 class Teknisyen ( models.Model ) :
     Aktif               =       models.BooleanField(default = 1)
     AdSoyad             =       models.CharField ( u'Adı Soyadı', max_length = 250 )
@@ -119,7 +124,7 @@ class Urunler ( models.Model ) :
     Aksesuar            =       models.ManyToManyField ( Aksesuarlar, blank=True )
     Durum               =       models.ForeignKey ( Durumlar )
     Not                 =       models.TextField ( u'Yapılan İşlemler', blank=True )
-
+    TeslimatTarihi      =       models.DateField ( u"Teslimat Tarihi", default=timezone.now, blank=True )
     def __unicode__(self):
         return "%s %s %s" % (self.Cins, self.Marka, self.Model)
 

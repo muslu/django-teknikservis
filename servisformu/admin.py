@@ -3,7 +3,6 @@
 from django.contrib import admin
 from servisformu.models import Teknisyen, Musteriler, Durumlar, Aksesuarlar, ServisForm, Urunler
 
-
 class TeknisyenAdmin(admin.ModelAdmin):
     list_display            =       ['Aktif', 'AdSoyad', 'Yazdir', 'EkAlanTest']
     list_per_page           =       20
@@ -12,6 +11,9 @@ class TeknisyenAdmin(admin.ModelAdmin):
     list_filter             =       ['Aktif', 'AdSoyad', ]
     search_fields           =       ['AdSoyad', ]
     date_hierarchy          =       'KayitTarihi'
+
+
+
 
     # def has_add_permission(self, request):
     #     try:
