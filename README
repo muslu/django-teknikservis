@@ -46,14 +46,16 @@ ajax ile sorgulama
 HttpResponse anlatımı
 veritabanına alan ekleme
 
-
-
-
 17 Ocak 2016
 xml dosyasına yönlendirme (render)
 cdata nedir ve kullanımı
 inline bilgileri (_set.all) template olarak kullanma
 forloop.counter nedir
+
+19 Ocak 2016
+xml ve txt dosyası yönlendirmeleri
+detaylı sayfa parselleme (block) anlatımı
+
 
 
 *** Bağış için alt bilgiye iban numarası ekledim. Yapılacak bağışlar oğlum Cem Emir'in oyuncakları için kullanılacaktır.
