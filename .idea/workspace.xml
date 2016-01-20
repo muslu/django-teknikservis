@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d15ca783-a5aa-48c0-be49-5f778dce0152" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/test.html" afterPath="$PROJECT_DIR$/templates/test.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="teknikservistakibi.iws" />
@@ -469,7 +468,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453301161683</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="20 Ocak 2016 - Etiketler - cycle, comment, for, extend">
+      <created>1453305938502</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1453305938502</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -535,7 +540,8 @@
     <MESSAGE value="19 Ocak 2016" />
     <MESSAGE value="19 Ocak 2016 - Etiketler - TemplateTags" />
     <MESSAGE value="20 Ocak 2016 - Etiketler - Cycle ve Comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="20 Ocak 2016 - Etiketler - Cycle ve Comment" />
+    <MESSAGE value="20 Ocak 2016 - Etiketler - cycle, comment, for, extend" />
+    <option name="LAST_COMMIT_MESSAGE" value="20 Ocak 2016 - Etiketler - cycle, comment, for, extend" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
