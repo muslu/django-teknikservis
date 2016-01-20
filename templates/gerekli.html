@@ -9,22 +9,35 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/media/favicon.ico">
+
     <link rel="stylesheet" href="/media/styles.css">
-
     <style>
-
-        #sabitust {
-            position: fixed;
-            left: 0px;
-            top: 0px;
-            height: 100px;
-            width: 100%;
-            background: #44B78B;
-            z-index: 9999;
-            line-height: 100px;
+        body {
+            margin: 0px;
+            background: #fff;
         }
 
-        #sabitalt {
+        .dis {
+            width: 100%;
+            position: fixed;
+            top: 0px;
+        }
+
+        .sabitust {
+            height: 50px;
+            background: #F0F0F0;
+            width: 100%;
+            margin: 0px auto;
+            line-height: 50px;
+        }
+
+        .orta {
+            width: 100%;
+            margin: 70px auto;
+        }
+
+
+        .sabitalt {
             position: fixed;
             left: 0px;
             bottom: 0px;
@@ -35,80 +48,30 @@
             line-height: 40px;
         }
 
-        /* IE 6 | ne olur ne olmaz ama fikriniz olur */
-        * html #footer {
-            position: absolute;
-            top: expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
-        }
-
     </style>
- <!-- gerekli.html head arası -->
+
 </head>
 <body>
 
-<div id="sabitust">
+<div class="dis">
+    <div class="sabitust">
 
-    <p><a href="/">Ana Sayfa</a> | <a href="/test/">Test</a></p>
+        <p><a href="/">Ana Sayfa</a> | <a href="/test/">Test</a></p>
 
+    </div>
+
+    <div class="orta">
+        {% block orta %}{% endblock orta %}
+    </div>
+
+    <div class="sabitalt">Sabit Alt</div>
 </div>
-
-
-
-
- <!-- burası gerekli.html block ortanın bir üst satırı -->
-{% block orta %}
- <!-- mey dey gerekli.html block ortanın içi burası -->
-{% endblock orta %}
- <!-- gerekli.html block ortanın bittiği yer -->
-
-
-
-
-
-<div id="sabitalt">Sabit Alt</div>
-
 
 <script src="/media/html5shiv.min.js"></script>
 <script src="/media/jquery-1.9.1.min.js"></script>
 
 
 {% block jsozel %}{% endblock jsozel %}
-
-<script>
-
-    $('section :input').val('').fancyInput()[0].focus();
-
-    var aramam = document.getElementById('arama');
-    var sonuclarimuslu = document.getElementById('sonuclarimuslu');
-
-    aramam.addEventListener('keypress', function (event) {
-
-        if (event.keyCode == 13) {
-
-            sonuclarimuslu.innerHTML = "";
-            if (aramam.value.length == 8) {
-
-                sonuclarimuslu.innerHTML = "Sorgulanıyor...<br /> Lütfen bekleyiniz.";
-                $.post("/kn/", {
-                    TakipNo: aramam.value,
-                    csrfmiddlewaretoken: "{{ csrf_token }}"
-                }, function (data) {
-                    sonuclarimuslu.innerHTML = data;
-                });
-
-
-            } else {
-                sonuclarimuslu.innerHTML = "Uygun bir arama kategorisi bulunamadı!";
-                window.setTimeout(function () {
-                    aramam.focus();
-                }, 0);
-
-            }
-        }
-    });
-
-</script>
-
 
 </body>
 </html>

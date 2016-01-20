@@ -2,18 +2,44 @@
 
 {% block orta %}
 
-    <div id='wrap'>
-        <div style="color:#ffffff;font-size:2.4vw;position:fixed;width:95%;top:20%;left:50%;-webkit-transform:translate(-50%, -50%);transform: translate(-50%, -50%);">
 
-            <p>Etiketler</p>
+    <style>
 
+        .sari {
+            background-color: yellow;
+            font-size: 64pt;
+        }
+
+        .kirmizi {
+            background-color: red;
+            font-size: 64px;
+        }
+
+        .gri {
+            background-color: gray;
+            font-size: 64px;
+        }
+
+    </style>
+
+
+    <p>Etiketler</p>
+    <table>
+        <tr>
             {% for o in "123456" %}
-                <tr class="{% cycle 'sari' 'kirmizi' %}">
+                <td class="{% cycle 'sari' 'kirmizi' %}">
                     {{ o }}
-                </tr>
+                </td>
             {% endfor %}
+        </tr>
+        <tr>
+            {% for o in "123456789" %}
+                <td class="{% cycle 'gri' 'kirmizi' 'sari' %}">
+                    {{ o }}
+                </td>
+            {% endfor %}
+        </tr>
+    </table>
 
-        </div>
-    </div>
 
 {% endblock orta %}
