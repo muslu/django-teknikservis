@@ -3,43 +3,13 @@
 {% block orta %}
 
 
-    <style>
-
-        .sari {
-            background-color: yellow;
-            font-size: 64pt;
-        }
-
-        .kirmizi {
-            background-color: red;
-            font-size: 64px;
-        }
-
-        .gri {
-            background-color: gray;
-            font-size: 64px;
-        }
-
-    </style>
-
-
     <p>Etiketler</p>
-    <table>
-        <tr>
-            {% for o in "123456" %}
-                <td class="{% cycle 'sari' 'kirmizi' %}">
-                    {{ o }}
-                </td>
-            {% endfor %}
-        </tr>
-        <tr>
-            {% for o in "123456789" %}
-                <td class="{% cycle 'gri' 'kirmizi' 'sari' %}">
-                    {{ o }}
-                </td>
-            {% endfor %}
-        </tr>
-    </table>
 
+
+<ul>
+{% for sayi in "123456" %}
+    <li>{{ sayi }}</li>
+{% endfor %}
+</ul>
 
 {% endblock orta %}
