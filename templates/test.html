@@ -1,15 +1,11 @@
 {% extends "gerekli.html" %}
 
 {% block orta %}
-
-
     <p>Etiketler</p>
 
-
-<ul>
-{% for sayi in "123456" %}
-    <li>{{ sayi }}</li>
-{% endfor %}
-</ul>
-
+{% verbatim %}
+    {% if ivir === zivir %}
+    {% extends "gerekli.html" %}
+{% endverbatim %}
+    
 {% endblock orta %}
