@@ -61,14 +61,10 @@ def xmlcikart(request):
 
 
 def test(request):
-
-
-
-    list1       =   ['muslu', 'yuksektepe']
-    list2       =   ['digerliste1', 'digerliste2']
+    list1       =   ['muslu', 'yuksektepe', '', False]
+    list2       =   ['digerliste1', 'digerliste2', None]
     string      =   "bu bir string"
     integer     =   35
-
     return render(request, 'test.html', {
                                             'list1': list1,
                                             'list2':list2,
