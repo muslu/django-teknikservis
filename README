@@ -5,9 +5,52 @@ https://www.facebook.com/groups/PythonTurkiye/
 Bağış Hesabı: TR03 0006 2000 7500 0006 6675 10
 
 
+Dokümanlar ODT formatıyla sunulmaktadır. 
+
+Tekrar yayınlamak ve/veya düzenlemek istediğinizde isim ve site adreslerinin yazılmasıyla istenildiği gibi kullanılabilir.
+
+Muslu YÜKSEKTEPE – 2016
+www.muslu.org | www.djangoturkiye.com
 
 
-Merhaba arkadaşlar;
+Merhaba arkadaşlar; genel olarak değişimler aşağıda listelenmiştir.
+
+21 Ocak 2016
+Templatetags ve filter örnekleri
+PDF index eklemesi
+
+20 Ocak 2016
+Templatetags örnekleri
+
+
+19 Ocak 2016
+xml ve txt dosyası yönlendirmeleri
+detaylı sayfa parselleme (block) anlatımı
+
+17 Ocak 2016
+xml dosyasına yönlendirme (render)
+cdata nedir ve kullanımı
+inline bilgileri (_set.all) template olarak kullanma
+forloop.counter nedir
+
+14 Ocak 2016
+TemplateView ile direk html,txt veya xml dosyasına yönlendirme
+media klasör kullanımı
+url.py ye fiziksel yol tanımlama (media)
+csrf kısa değinme
+ajax ile sorgulama
+HttpResponse anlatımı
+veritabanına alan ekleme
+
+13 Ocak 2016
+admin temasını kopyalama
+static dosyalarını düzenleme
+html dosyalarını düzenleme
+stil ekleme
+yetkilendirme
+list_display kısıtlama
+kayıt limiti koyma
+kayıt silme iptali
 
 12 Ocak 2016
 uygulama adı değiştirme
@@ -28,34 +71,6 @@ tabular ve stacked inline denemesi
 servis kaydı oluşturma ve çıktısını alma
 
 
-13 Ocak 2016
-admin temasını kopyalama
-static dosyalarını düzenleme
-html dosyalarını düzenleme
-stil ekleme
-yetkilendirme
-list_display kısıtlama
-kayıt limiti koyma
-kayıt silme iptali
-
-14 Ocak 2016
-TemplateView ile direk html,txt veya xml dosyasına yönlendirme
-media klasör kullanımı
-url.py ye fiziksel yol tanımlama (media)
-csrf kısa değinme
-ajax ile sorgulama
-HttpResponse anlatımı
-veritabanına alan ekleme
-
-17 Ocak 2016
-xml dosyasına yönlendirme (render)
-cdata nedir ve kullanımı
-inline bilgileri (_set.all) template olarak kullanma
-forloop.counter nedir
-
-19 Ocak 2016
-xml ve txt dosyası yönlendirmeleri
-detaylı sayfa parselleme (block) anlatımı
 
 
 
