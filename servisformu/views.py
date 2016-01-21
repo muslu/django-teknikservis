@@ -56,3 +56,24 @@ def xmlcikart(request):
         ### tumformlar bir liste olduğu için 1 kayıt al diyebilir ve tekrar aynı isimle tanımlayabiliriz
 
     return render(request, 'formlar.xml', {'tumformlar': tumformlar}, content_type="application/xml")
+
+
+
+
+def test(request):
+
+
+
+    list1       =   ['muslu', 'yuksektepe']
+    list2       =   ['digerliste1', 'digerliste2']
+    string      =   "bu bir string"
+    integer     =   35
+
+    return render(request, 'test.html', {
+                                            'list1': list1,
+                                            'list2':list2,
+                                            'string':string,
+                                            'integer':integer
+                                        },
+                  )
+

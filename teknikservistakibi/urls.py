@@ -4,14 +4,17 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
 
-from servisformu.views import sayfayiyazdir, formdurumusorgula, xmlcikart
+from servisformu.views import sayfayiyazdir, formdurumusorgula, xmlcikart, test
 
 
 
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name="index.html")),
-    url(r'^test/$', TemplateView.as_view(template_name="test.html")),
+
+    url(r'^test/$', test),
+    # url(r'^test/$', TemplateView.as_view(template_name="test.html")),
+
     url(r'^kn/$', formdurumusorgula, name='formdurumusorgula'),
 
     url(r'^xml/$', xmlcikart, name='xml'),

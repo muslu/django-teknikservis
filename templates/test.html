@@ -3,14 +3,11 @@
 {% block orta %}
     <p>Etiketler</p>
 
-    {{ 6|add:"3" }}
-    <br/>
-    {{ "muslu"|add:"yüksektepe" }}
-    <br/>
-    {{ "muslu"|add:"3" }}
-    <br/>
-    {{ liste|add:"3,4,5" }}
+    <br/><br/><br/><br/>
 
-
+    {{ string }}
+    <br/>
+    {{ string|cut:'i' }}
+    {{ integer|cut:'3' }}
 
 {% endblock orta %}
